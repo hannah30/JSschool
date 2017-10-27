@@ -7,51 +7,42 @@
 //
 
 import UIKit
+import SafariServices
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControllerDelegate {
   
-  @IBOutlet weak var loginView: LoginRoundView!
+  @IBOutlet weak var headCopyText: KeringLabel!
   
-  @IBOutlet weak var idInputTextfield: UITextField!
+
   
-  @IBOutlet weak var pwInputTextfield: UITextField!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    idInputTextfield.becomeFirstResponder()
+    
 
   }
+  
+  
+  @IBAction func didTapTermBtn(_ sender: Any) {
+    let term = NSURL(string: "http://www.jesschool.com/jesschool/app_terms.html")!
+    let termSapari = SFSafariViewController(url: term as URL)
+    present(termSapari, animated: true, completion: nil)
+  }
+  
+  @IBAction func didTapProvisionBtn(_ sender: Any) {
+    let provision = NSURL(string: "http://www.jesschool.com/jesschool/provision.html")!
+    let provisionSapari = SFSafariViewController(url: provision as URL)
+    present(provisionSapari, animated: true, completion: nil)
+  }
+  
+  
   
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     
     
-    //로그인영역 가운데 선을 보더값과 같은 값의 선으로 그리기 위해 layer를 사용
-    let centerLineOffsetX = Double(0)
-    let centerLineOffsetY = Double(loginView.bounds.size.height / 2.0)
-    let centerLineWidth = Double(loginView.bounds.size.width * 1)
-    let centerLineHeight = 1.0 / Double(UIScreen.main.scale)
-    
-    let centerLayer = CALayer()
-    centerLayer.frame = CGRect(
-      x: centerLineOffsetX,
-      y: centerLineOffsetY,
-      width: centerLineWidth,
-      height: centerLineHeight
-    )
-    centerLayer.backgroundColor = UIColor.lightGray.cgColor
-    
-    loginView.layer.addSublayer(centerLayer)
-  }
-
-  @IBAction func loginBtn(_ sender: UIButton) {
-    
-  }
-  @IBAction func findIdBtn(_ sender: UIButton) {
-  }
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
   }
 // UI의 어느 부분을 클릭해도 키보드가 내려가게 함
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

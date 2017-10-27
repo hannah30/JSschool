@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA2A1C371F8F7BA1009CB0AF /* LoginRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A1C361F8F7BA1009CB0AF /* LoginRoundView.swift */; };
-		BA2A1C3B1F8F864F009CB0AF /* LoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A1C3A1F8F864F009CB0AF /* LoginBtn.swift */; };
+		BA2A1C3B1F8F864F009CB0AF /* YellowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A1C3A1F8F864F009CB0AF /* YellowBtn.swift */; };
 		BA6215F31F8F6F9B00270D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6215F21F8F6F9B00270D8E /* AppDelegate.swift */; };
 		BA6215F51F8F6F9B00270D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6215F41F8F6F9B00270D8E /* ViewController.swift */; };
 		BA6215F81F8F6F9B00270D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6215F61F8F6F9B00270D8E /* Main.storyboard */; };
 		BA6215FA1F8F6F9B00270D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6215F91F8F6F9B00270D8E /* Assets.xcassets */; };
 		BA6215FD1F8F6F9B00270D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6215FB1F8F6F9B00270D8E /* LaunchScreen.storyboard */; };
+		BAD183781F97704400FB6606 /* WhiteBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD183771F97704400FB6606 /* WhiteBtn.swift */; };
+		BAD1837C1F97755700FB6606 /* kerning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD1837B1F97755700FB6606 /* kerning.swift */; };
 		BAE6A1411F95E48600EDB7C0 /* UnderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6A1401F95E48600EDB7C0 /* UnderLine.swift */; };
-		BAE6A1471F96195F00EDB7C0 /* MakeCountStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6A1461F96195F00EDB7C0 /* MakeCountStepOneViewController.swift */; };
+		BAE6A1471F96195F00EDB7C0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE6A1461F96195F00EDB7C0 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA2A1C361F8F7BA1009CB0AF /* LoginRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoundView.swift; sourceTree = "<group>"; };
-		BA2A1C3A1F8F864F009CB0AF /* LoginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBtn.swift; sourceTree = "<group>"; };
+		BA2A1C3A1F8F864F009CB0AF /* YellowBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowBtn.swift; sourceTree = "<group>"; };
 		BA6215EF1F8F6F9B00270D8E /* JSlogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSlogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6215F21F8F6F9B00270D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA6215F41F8F6F9B00270D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +28,10 @@
 		BA6215F91F8F6F9B00270D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA6215FC1F8F6F9B00270D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA6215FE1F8F6F9B00270D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD183771F97704400FB6606 /* WhiteBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBtn.swift; sourceTree = "<group>"; };
+		BAD1837B1F97755700FB6606 /* kerning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kerning.swift; sourceTree = "<group>"; };
 		BAE6A1401F95E48600EDB7C0 /* UnderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLine.swift; sourceTree = "<group>"; };
-		BAE6A1461F96195F00EDB7C0 /* MakeCountStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCountStepOneViewController.swift; sourceTree = "<group>"; };
+		BAE6A1461F96195F00EDB7C0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +78,10 @@
 		BAE6A13F1F95E3E700EDB7C0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA2A1C3A1F8F864F009CB0AF /* LoginBtn.swift */,
+				BAD1837B1F97755700FB6606 /* kerning.swift */,
+				BA2A1C3A1F8F864F009CB0AF /* YellowBtn.swift */,
+				BAD183771F97704400FB6606 /* WhiteBtn.swift */,
 				BAE6A1401F95E48600EDB7C0 /* UnderLine.swift */,
-				BA2A1C361F8F7BA1009CB0AF /* LoginRoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,7 +89,7 @@
 		BAE6A1481F96197D00EDB7C0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BAE6A1461F96195F00EDB7C0 /* MakeCountStepOneViewController.swift */,
+				BAE6A1461F96195F00EDB7C0 /* LoginViewController.swift */,
 				BA6215F41F8F6F9B00270D8E /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -165,11 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA6215F51F8F6F9B00270D8E /* ViewController.swift in Sources */,
-				BA2A1C371F8F7BA1009CB0AF /* LoginRoundView.swift in Sources */,
 				BAE6A1411F95E48600EDB7C0 /* UnderLine.swift in Sources */,
-				BA2A1C3B1F8F864F009CB0AF /* LoginBtn.swift in Sources */,
+				BA2A1C3B1F8F864F009CB0AF /* YellowBtn.swift in Sources */,
+				BAD183781F97704400FB6606 /* WhiteBtn.swift in Sources */,
 				BA6215F31F8F6F9B00270D8E /* AppDelegate.swift in Sources */,
-				BAE6A1471F96195F00EDB7C0 /* MakeCountStepOneViewController.swift in Sources */,
+				BAD1837C1F97755700FB6606 /* kerning.swift in Sources */,
+				BAE6A1471F96195F00EDB7C0 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
