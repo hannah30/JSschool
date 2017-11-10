@@ -1,6 +1,4 @@
-
-
-
+//일반 회원가입 버튼
 import UIKit
 
 class WhiteBtn: UIButton {

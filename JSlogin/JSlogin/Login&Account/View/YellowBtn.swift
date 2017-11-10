@@ -1,5 +1,4 @@
-
-
+// 카카오톡 로그인 버튼
 import UIKit
 
 class YellowBtn: UIButton {

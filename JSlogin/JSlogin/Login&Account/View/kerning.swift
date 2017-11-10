@@ -1,10 +1,5 @@
-//
-//  kerning.swift
-//  JSlogin
-//
-//  Created by okkoung on 2017. 10. 18..
-//  Copyright © 2017년 okkoung. All rights reserved.
-//
+
+// 글자자간 및 줄 간격 넓히기
 
 import UIKit
 
