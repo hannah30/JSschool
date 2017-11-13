@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA049C101FB1AABE00E63BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */; };
-		BA049C151FB1AABE00E63BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA049C131FB1AABE00E63BFA /* Main.storyboard */; };
-		BA049C171FB1AABE00E63BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA049C161FB1AABE00E63BFA /* Assets.xcassets */; };
+		BA049C151FB1AABE00E63BFA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA049C131FB1AABE00E63BFA /* Login.storyboard */; };
 		BA049C1A1FB1AABE00E63BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA049C181FB1AABE00E63BFA /* LaunchScreen.storyboard */; };
 		BA049C221FB1B6C900E63BFA /* WhiteBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C211FB1B6C900E63BFA /* WhiteBtn.swift */; };
 		BA049C241FB1B6DA00E63BFA /* YellowBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C231FB1B6DA00E63BFA /* YellowBtn.swift */; };
@@ -19,15 +18,25 @@
 		BA049C2F1FB1C91000E63BFA /* KeyboardAccessaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C2E1FB1C91000E63BFA /* KeyboardAccessaryView.swift */; };
 		BA049C311FB1CB4D00E63BFA /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C301FB1CB4D00E63BFA /* TempViewController.swift */; };
 		BA049C331FB1CCBA00E63BFA /* AccountStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C321FB1CCBA00E63BFA /* AccountStepOneViewController.swift */; };
+		BA0FF18B1FB9964700111E30 /* SupervisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FF18A1FB9964700111E30 /* SupervisorViewController.swift */; };
+		BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */; };
 		BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */; };
 		BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */; };
+		BA58B7361FB5502100A62207 /* AccountStepFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7351FB5502100A62207 /* AccountStepFourViewController.swift */; };
+		BA58B7381FB55DA700A62207 /* SettingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7371FB55DA700A62207 /* SettingListViewController.swift */; };
+		BA58B73A1FB55F7300A62207 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA58B7391FB55F7300A62207 /* Setting.storyboard */; };
+		BA58B73D1FB56B3D00A62207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA58B73C1FB56B3C00A62207 /* Assets.xcassets */; };
+		BA58B7401FB570C200A62207 /* SettingListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B73F1FB570C200A62207 /* SettingListData.swift */; };
+		BA58B7431FB5764200A62207 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7421FB5764200A62207 /* ListTableViewCell.swift */; };
+		BA58B7491FB5811100A62207 /* SettingListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7481FB5811100A62207 /* SettingListHeaderCell.swift */; };
+		BA7812761FB96FFA00CDE8F6 /* sayJesusSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7812751FB96FFA00CDE8F6 /* sayJesusSchoolViewController.swift */; };
+		BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFA4351FB9818600007805 /* FaqViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA049C0C1FB1AABD00E63BFA /* JesusSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JesusSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA049C141FB1AABE00E63BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA049C161FB1AABE00E63BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA049C141FB1AABE00E63BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		BA049C191FB1AABE00E63BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA049C1B1FB1AABE00E63BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA049C211FB1B6C900E63BFA /* WhiteBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBtn.swift; sourceTree = "<group>"; };
@@ -38,8 +47,19 @@
 		BA049C2E1FB1C91000E63BFA /* KeyboardAccessaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAccessaryView.swift; sourceTree = "<group>"; };
 		BA049C301FB1CB4D00E63BFA /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		BA049C321FB1CCBA00E63BFA /* AccountStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepOneViewController.swift; sourceTree = "<group>"; };
+		BA0FF18A1FB9964700111E30 /* SupervisorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorViewController.swift; sourceTree = "<group>"; };
+		BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSteptwoViewController.swift; sourceTree = "<group>"; };
 		BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepThreeViewController.swift; sourceTree = "<group>"; };
+		BA58B7351FB5502100A62207 /* AccountStepFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepFourViewController.swift; sourceTree = "<group>"; };
+		BA58B7371FB55DA700A62207 /* SettingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewController.swift; sourceTree = "<group>"; };
+		BA58B7391FB55F7300A62207 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		BA58B73C1FB56B3C00A62207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA58B73F1FB570C200A62207 /* SettingListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListData.swift; sourceTree = "<group>"; };
+		BA58B7421FB5764200A62207 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		BA58B7481FB5811100A62207 /* SettingListHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListHeaderCell.swift; sourceTree = "<group>"; };
+		BA7812751FB96FFA00CDE8F6 /* sayJesusSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sayJesusSchoolViewController.swift; sourceTree = "<group>"; };
+		BAAFA4351FB9818600007805 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */,
+				BA58B73B1FB55F8900A62207 /* Setting */,
 				BA049C281FB1B78200E63BFA /* LoginAccount */,
-				BA049C161FB1AABE00E63BFA /* Assets.xcassets */,
 				BA049C181FB1AABE00E63BFA /* LaunchScreen.storyboard */,
 				BA049C1B1FB1AABE00E63BFA /* Info.plist */,
+				BA58B73C1FB56B3C00A62207 /* Assets.xcassets */,
 			);
 			path = JesusSchool;
 			sourceTree = "<group>";
@@ -95,8 +116,8 @@
 		BA049C281FB1B78200E63BFA /* LoginAccount */ = {
 			isa = PBXGroup;
 			children = (
+				BA049C131FB1AABE00E63BFA /* Login.storyboard */,
 				BA049C2B1FB1B8CE00E63BFA /* ViewController */,
-				BA049C131FB1AABE00E63BFA /* Main.storyboard */,
 				BA049C271FB1B76900E63BFA /* View */,
 			);
 			path = LoginAccount;
@@ -111,8 +132,41 @@
 				BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */,
 				BA049C321FB1CCBA00E63BFA /* AccountStepOneViewController.swift */,
 				BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */,
+				BA58B7351FB5502100A62207 /* AccountStepFourViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BA58B73B1FB55F8900A62207 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BA58B73E1FB5709400A62207 /* ViewController */,
+				BA58B7391FB55F7300A62207 /* Setting.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		BA58B73E1FB5709400A62207 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA58B7371FB55DA700A62207 /* SettingListViewController.swift */,
+				BA58B7421FB5764200A62207 /* ListTableViewCell.swift */,
+				BA58B7481FB5811100A62207 /* SettingListHeaderCell.swift */,
+				BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */,
+				BAAFA4351FB9818600007805 /* FaqViewController.swift */,
+				BA7812751FB96FFA00CDE8F6 /* sayJesusSchoolViewController.swift */,
+				BA0FF18A1FB9964700111E30 /* SupervisorViewController.swift */,
+				BA58B7411FB570C800A62207 /* Model */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BA58B7411FB570C800A62207 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA58B73F1FB570C200A62207 /* SettingListData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA049C1A1FB1AABE00E63BFA /* LaunchScreen.storyboard in Resources */,
-				BA049C171FB1AABE00E63BFA /* Assets.xcassets in Resources */,
-				BA049C151FB1AABE00E63BFA /* Main.storyboard in Resources */,
+				BA049C151FB1AABE00E63BFA /* Login.storyboard in Resources */,
+				BA58B73D1FB56B3D00A62207 /* Assets.xcassets in Resources */,
+				BA58B73A1FB55F7300A62207 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,26 +245,35 @@
 				BA049C311FB1CB4D00E63BFA /* TempViewController.swift in Sources */,
 				BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */,
 				BA049C261FB1B72800E63BFA /* Kerning.swift in Sources */,
+				BA58B7381FB55DA700A62207 /* SettingListViewController.swift in Sources */,
+				BA58B7401FB570C200A62207 /* SettingListData.swift in Sources */,
+				BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */,
 				BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */,
 				BA049C221FB1B6C900E63BFA /* WhiteBtn.swift in Sources */,
+				BA0FF18B1FB9964700111E30 /* SupervisorViewController.swift in Sources */,
 				BA049C2D1FB1C8D100E63BFA /* LoginStepOneViewController.swift in Sources */,
+				BA7812761FB96FFA00CDE8F6 /* sayJesusSchoolViewController.swift in Sources */,
+				BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */,
+				BA58B7361FB5502100A62207 /* AccountStepFourViewController.swift in Sources */,
 				BA049C241FB1B6DA00E63BFA /* YellowBtn.swift in Sources */,
 				BA049C2A1FB1B8C600E63BFA /* LoginViewController.swift in Sources */,
 				BA049C2F1FB1C91000E63BFA /* KeyboardAccessaryView.swift in Sources */,
 				BA049C101FB1AABE00E63BFA /* AppDelegate.swift in Sources */,
+				BA58B7491FB5811100A62207 /* SettingListHeaderCell.swift in Sources */,
 				BA049C331FB1CCBA00E63BFA /* AccountStepOneViewController.swift in Sources */,
+				BA58B7431FB5764200A62207 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA049C131FB1AABE00E63BFA /* Main.storyboard */ = {
+		BA049C131FB1AABE00E63BFA /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BA049C141FB1AABE00E63BFA /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		BA049C181FB1AABE00E63BFA /* LaunchScreen.storyboard */ = {
@@ -334,14 +398,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = PP5VV2LAS4;
 				INFOPLIST_FILE = JesusSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jscschool.JesusSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,14 +415,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
+				DEVELOPMENT_TEAM = PP5VV2LAS4;
 				INFOPLIST_FILE = JesusSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jscschool.JesusSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

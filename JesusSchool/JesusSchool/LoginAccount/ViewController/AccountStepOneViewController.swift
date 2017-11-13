@@ -20,9 +20,6 @@ class AccountStepOneViewController: UIViewController {
     idInputTextField.addTarget(self, action: #selector(didTabExit(_:)), for: .editingDidEndOnExit)
     passwordInputTextField.addTarget(self, action: #selector(didTabExit(_:)), for: .editingDidEndOnExit)
     
-    //    keyboardTopView.nextClosure = {
-    //      self.performSegue(withIdentifier: "kakunin", sender: nil)
-    //    }
     idInputTextField.inputAccessoryView = keyboardTopView
     passwordInputTextField.inputAccessoryView = keyboardTopView
   }
@@ -39,26 +36,18 @@ class AccountStepOneViewController: UIViewController {
     idInputTextField.resignFirstResponder()
     navigationController?.dismiss(animated: true, completion: nil)
   }
-  //텍스트필드에 관한 메서드
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-    if idInputTextField.isFirstResponder {
-      passwordInputTextField.becomeFirstResponder()
-    }else if passwordInputTextField.isFirstResponder {
-      performSegue(withIdentifier: "Nickname", sender: nil)
-    }
-    return true
-  }
+  
 }
-
+//id&password textfield check
 extension AccountStepOneViewController: KeyboardAccessaryViewDelegate {
   func didTabNextBtn() {
     guard let idTextFieldText = idInputTextField.text else { return }
     guard let passwordTextFieldText = passwordInputTextField.text else { return }
-    if !idTextFieldText.isEmpty && idTextFieldText.characters.count >= 5 &&
-      !passwordTextFieldText.isEmpty && passwordTextFieldText.characters.count >= 8 {
+    if !idTextFieldText.isEmpty && idTextFieldText.characters.count > 4 &&
+      !passwordTextFieldText.isEmpty && passwordTextFieldText.characters.count > 8 {
       performSegue(withIdentifier: "Nickname", sender: nil)
     } else {
-      let alret = UIAlertController(title: "아이디, 패스워드 확인", message: "아이디는 5자 이상, 패스워드는 8자 이상으로 입력해 주세요.", preferredStyle: .alert)
+      let alret = UIAlertController(title: "아이디, 패스워드 확인", message: "아이디는 5자 이상, 패스워드는 9자 이상으로 입력해 주세요.", preferredStyle: .alert)
       let alretAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
       alret.addAction(alretAction)
       self.present(alret, animated: true, completion: nil)
@@ -67,6 +56,16 @@ extension AccountStepOneViewController: KeyboardAccessaryViewDelegate {
 }
 
 extension AccountStepOneViewController: UITextFieldDelegate {
+  //textfield nextbtn, gobtn method
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    if idInputTextField.isFirstResponder {
+      passwordInputTextField.becomeFirstResponder()
+    }else if passwordInputTextField.isFirstResponder {
+      performSegue(withIdentifier: "Nickname", sender: nil)
+    }
+    return true
+  }
+  //idinputtextfield only letters&numbers
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     if textField == idInputTextField {
       let allowCharacters = CharacterSet.alphanumerics

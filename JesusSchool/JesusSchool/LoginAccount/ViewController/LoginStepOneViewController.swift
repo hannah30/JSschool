@@ -40,7 +40,7 @@ class LoginStepOneViewController: UIViewController, UITextFieldDelegate {
     navigationController?.dismiss(animated: true, completion: nil)
   }
   //키보드의 next, go버튼
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     if idInputTextField.isFirstResponder {
       passwordInputTextField.becomeFirstResponder()
     }else if passwordInputTextField.isFirstResponder {
@@ -50,6 +50,7 @@ class LoginStepOneViewController: UIViewController, UITextFieldDelegate {
   }
 }
 
+// keyboard nextbtn action
 extension LoginStepOneViewController: KeyboardAccessaryViewDelegate {
   func didTabNextBtn() {
     //입력된 아이디와 패스워드값을 가져와서 서버에 저장된 값과 일치하는지 확인할 코드가 들어가야함

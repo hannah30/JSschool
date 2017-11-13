@@ -19,29 +19,29 @@ class AccountStepTwoViewController: UIViewController {
  
   @IBAction func didTabCancelBtn(_ sender: Any) {
     nicknameInputTextField.resignFirstResponder()
-//    self.dismiss(animated: true, completion: nil)
     self.navigationController?.popViewController(animated: true)
   }
-  //텍스트필드에 관한 메서드
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-      performSegue(withIdentifier: "Grade", sender: nil)
-    return true
-  }
+  
 }
 
 extension AccountStepTwoViewController: KeyboardAccessaryViewDelegate {
   func didTabNextBtn() {
     guard let nicknameTextFieldText = nicknameInputTextField.text else { return }
-    if !nicknameTextFieldText.isEmpty && nicknameTextFieldText.characters.count >= 5 {
-      performSegue(withIdentifier: "Grade", sender: nil)
+    if !nicknameTextFieldText.isEmpty && nicknameTextFieldText.characters.count > 2 {
+      performSegue(withIdentifier: "PhoneNumber", sender: nil)
     } else {
-      let alret = UIAlertController(title: "닉네임 확인", message: "닉네임은 5자 이상으로 입력해 주세요.", preferredStyle: .alert)
+      let alret = UIAlertController(title: "닉네임 확인", message: "닉네임은 3자 이상으로 입력해 주세요.", preferredStyle: .alert)
       let alretAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
       alret.addAction(alretAction)
       self.present(alret, animated: true, completion: nil)
     }
   }
-  
 }
 
+extension AccountStepTwoViewController: UITextFieldDelegate {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    performSegue(withIdentifier: "PhoneNumber", sender: nil)
+    return true
+  }
+}
 
