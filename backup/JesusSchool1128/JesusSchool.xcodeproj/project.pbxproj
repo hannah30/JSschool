@@ -22,11 +22,6 @@
 		BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */; };
 		BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */; };
 		BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */; };
-		BA2DEA191FCD238E007A0953 /* SchoolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */; };
-		BA2DEA1B1FCD2BAF007A0953 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA1A1FCD2BAF007A0953 /* MyAccountViewController.swift */; };
-		BA2DEA1D1FCD2C78007A0953 /* MyAccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA1C1FCD2C78007A0953 /* MyAccountData.swift */; };
-		BA2DEA1F1FCD4A63007A0953 /* AccountStepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA1E1FCD4A63007A0953 /* AccountStepData.swift */; };
-		BA2DEA221FCD8D96007A0953 /* AlamofireRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA211FCD8D96007A0953 /* AlamofireRepository.swift */; };
 		BA58B7361FB5502100A62207 /* AccountStepFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7351FB5502100A62207 /* AccountStepFourViewController.swift */; };
 		BA58B7381FB55DA700A62207 /* SettingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7371FB55DA700A62207 /* SettingListViewController.swift */; };
 		BA58B73A1FB55F7300A62207 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA58B7391FB55F7300A62207 /* Setting.storyboard */; };
@@ -36,18 +31,9 @@
 		BA7812761FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7812751FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift */; };
 		BA7B80C61FBAB629008432AE /* SettingListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B80C51FBAB629008432AE /* SettingListHeader.swift */; };
 		BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFA4351FB9818600007805 /* FaqViewController.swift */; };
-		BAEB87C51FCEAAC000A170B4 /* MyAccountList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB87C41FCEAAC000A170B4 /* MyAccountList.storyboard */; };
-		BAEB87C81FCEE22500A170B4 /* RightInStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB87C71FCEE22500A170B4 /* RightInStoryboardSegue.swift */; };
-		BAF169D41FCFD7920000D4B9 /* Alret.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF169D31FCFD7920000D4B9 /* Alret.swift */; };
-		BAF169D71FCFD8340000D4B9 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF169D61FCFD8340000D4B9 /* String+Regex.swift */; };
-		BAF169D91FCFE20F0000D4B9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF169D81FCFE20F0000D4B9 /* SplashViewController.swift */; };
-		D640375F268B87FFCA40E012 /* Pods_JesusSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 720CF07892AA9A1EB2D5F1E5 /* Pods_JesusSchool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		26869421B685A5AA7D3D33E8 /* Pods-JesusSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JesusSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool.debug.xcconfig"; sourceTree = "<group>"; };
-		2998FF737D1419D61B22F421 /* Pods-JesusSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JesusSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool.release.xcconfig"; sourceTree = "<group>"; };
-		720CF07892AA9A1EB2D5F1E5 /* Pods_JesusSchool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JesusSchool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA049C0C1FB1AABD00E63BFA /* JesusSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JesusSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA049C141FB1AABE00E63BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -65,11 +51,6 @@
 		BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSteptwoViewController.swift; sourceTree = "<group>"; };
 		BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepThreeViewController.swift; sourceTree = "<group>"; };
-		BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewController.swift; sourceTree = "<group>"; };
-		BA2DEA1A1FCD2BAF007A0953 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
-		BA2DEA1C1FCD2C78007A0953 /* MyAccountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountData.swift; sourceTree = "<group>"; };
-		BA2DEA1E1FCD4A63007A0953 /* AccountStepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepData.swift; sourceTree = "<group>"; };
-		BA2DEA211FCD8D96007A0953 /* AlamofireRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRepository.swift; sourceTree = "<group>"; };
 		BA58B7351FB5502100A62207 /* AccountStepFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepFourViewController.swift; sourceTree = "<group>"; };
 		BA58B7371FB55DA700A62207 /* SettingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewController.swift; sourceTree = "<group>"; };
 		BA58B7391FB55F7300A62207 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -79,11 +60,6 @@
 		BA7812751FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayJesusSchoolViewController.swift; sourceTree = "<group>"; };
 		BA7B80C51FBAB629008432AE /* SettingListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListHeader.swift; sourceTree = "<group>"; };
 		BAAFA4351FB9818600007805 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
-		BAEB87C41FCEAAC000A170B4 /* MyAccountList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAccountList.storyboard; sourceTree = "<group>"; };
-		BAEB87C71FCEE22500A170B4 /* RightInStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightInStoryboardSegue.swift; sourceTree = "<group>"; };
-		BAF169D31FCFD7920000D4B9 /* Alret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alret.swift; sourceTree = "<group>"; };
-		BAF169D61FCFD8340000D4B9 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
-		BAF169D81FCFE20F0000D4B9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,37 +67,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D640375F268B87FFCA40E012 /* Pods_JesusSchool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1305B994556A8FD2713A0E61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26869421B685A5AA7D3D33E8 /* Pods-JesusSchool.debug.xcconfig */,
-				2998FF737D1419D61B22F421 /* Pods-JesusSchool.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		92A9B38A5C6ECA172E2CB634 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				720CF07892AA9A1EB2D5F1E5 /* Pods_JesusSchool.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BA049C031FB1AABD00E63BFA = {
 			isa = PBXGroup;
 			children = (
 				BA049C0E1FB1AABD00E63BFA /* JesusSchool */,
 				BA049C0D1FB1AABD00E63BFA /* Products */,
-				1305B994556A8FD2713A0E61 /* Pods */,
-				92A9B38A5C6ECA172E2CB634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,11 +92,12 @@
 		BA049C0E1FB1AABD00E63BFA /* JesusSchool */ = {
 			isa = PBXGroup;
 			children = (
-				BAF169D51FCFD7980000D4B9 /* Utils */,
-				BA2DEA201FCD8D86007A0953 /* Service */,
-				BAF169CE1FCFAEA80000D4B9 /* Sources */,
-				BAF169D01FCFAEDC0000D4B9 /* Resources */,
-				BAF169CF1FCFAEBB0000D4B9 /* Supporting Files */,
+				BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */,
+				BA58B73B1FB55F8900A62207 /* Setting */,
+				BA049C281FB1B78200E63BFA /* LoginAccount */,
+				BA049C181FB1AABE00E63BFA /* LaunchScreen.storyboard */,
+				BA049C1B1FB1AABE00E63BFA /* Info.plist */,
+				BA58B73C1FB56B3C00A62207 /* Assets.xcassets */,
 			);
 			path = JesusSchool;
 			sourceTree = "<group>";
@@ -152,7 +109,6 @@
 				BA049C211FB1B6C900E63BFA /* WhiteBtn.swift */,
 				BA049C231FB1B6DA00E63BFA /* YellowBtn.swift */,
 				BA049C251FB1B72800E63BFA /* Kerning.swift */,
-				BAEB87C71FCEE22500A170B4 /* RightInStoryboardSegue.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				BA049C131FB1AABE00E63BFA /* Login.storyboard */,
-				BAF169CD1FCFAC460000D4B9 /* Model */,
 				BA049C2B1FB1B8CE00E63BFA /* ViewController */,
 				BA049C271FB1B76900E63BFA /* View */,
 			);
@@ -172,8 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				BA049C291FB1B8C600E63BFA /* LoginViewController.swift */,
-				BAF169D81FCFE20F0000D4B9 /* SplashViewController.swift */,
-				BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */,
 				BA049C2C1FB1C8D100E63BFA /* LoginStepOneViewController.swift */,
 				BA049C301FB1CB4D00E63BFA /* TempViewController.swift */,
 				BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */,
@@ -187,27 +140,19 @@
 		BA15E7341FBADC61001FA5AF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA58B7421FB5764200A62207 /* ListTableViewCell.swift */,
 				BA7B80C51FBAB629008432AE /* SettingListHeader.swift */,
+				BA58B7421FB5764200A62207 /* ListTableViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		BA2DEA201FCD8D86007A0953 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				BA2DEA211FCD8D96007A0953 /* AlamofireRepository.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		BA58B73B1FB55F8900A62207 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				BA58B7391FB55F7300A62207 /* Setting.storyboard */,
 				BA58B73E1FB5709400A62207 /* ViewController */,
 				BA15E7341FBADC61001FA5AF /* View */,
 				BA58B7411FB570C800A62207 /* Model */,
+				BA58B7391FB55F7300A62207 /* Setting.storyboard */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -232,85 +177,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BAEB87C01FCEA88700A170B4 /* MyAccountList */ = {
-			isa = PBXGroup;
-			children = (
-				BAEB87C41FCEAAC000A170B4 /* MyAccountList.storyboard */,
-				BAEB87C61FCEAC8200A170B4 /* View */,
-				BAEB87C31FCEA8F300A170B4 /* Model */,
-				BAEB87C21FCEA8E800A170B4 /* ViewController */,
-			);
-			path = MyAccountList;
-			sourceTree = "<group>";
-		};
-		BAEB87C21FCEA8E800A170B4 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BA2DEA1A1FCD2BAF007A0953 /* MyAccountViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		BAEB87C31FCEA8F300A170B4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BA2DEA1C1FCD2C78007A0953 /* MyAccountData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BAEB87C61FCEAC8200A170B4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BAF169CD1FCFAC460000D4B9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BA2DEA1E1FCD4A63007A0953 /* AccountStepData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BAF169CE1FCFAEA80000D4B9 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */,
-				BA049C281FB1B78200E63BFA /* LoginAccount */,
-				BA58B73B1FB55F8900A62207 /* Setting */,
-				BAEB87C01FCEA88700A170B4 /* MyAccountList */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		BAF169CF1FCFAEBB0000D4B9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA049C1B1FB1AABE00E63BFA /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BAF169D01FCFAEDC0000D4B9 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BA049C181FB1AABE00E63BFA /* LaunchScreen.storyboard */,
-				BA58B73C1FB56B3C00A62207 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		BAF169D51FCFD7980000D4B9 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				BAF169D31FCFD7920000D4B9 /* Alret.swift */,
-				BAF169D61FCFD8340000D4B9 /* String+Regex.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,12 +184,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA049C1E1FB1AABE00E63BFA /* Build configuration list for PBXNativeTarget "JesusSchool" */;
 			buildPhases = (
-				F32406AF876722A2449D1848 /* [CP] Check Pods Manifest.lock */,
 				BA049C081FB1AABD00E63BFA /* Sources */,
 				BA049C091FB1AABD00E63BFA /* Frameworks */,
 				BA049C0A1FB1AABD00E63BFA /* Resources */,
-				0F562E120D1088E5A5614F49 /* [CP] Embed Pods Frameworks */,
-				4454F737A102AFA9AD695DD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAEB87C51FCEAAC000A170B4 /* MyAccountList.storyboard in Resources */,
 				BA049C1A1FB1AABE00E63BFA /* LaunchScreen.storyboard in Resources */,
 				BA049C151FB1AABE00E63BFA /* Login.storyboard in Resources */,
 				BA58B73D1FB56B3D00A62207 /* Assets.xcassets in Resources */,
@@ -383,97 +245,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0F562E120D1088E5A5614F49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4454F737A102AFA9AD695DD6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F32406AF876722A2449D1848 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JesusSchool-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BA049C081FB1AABD00E63BFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF169D91FCFE20F0000D4B9 /* SplashViewController.swift in Sources */,
 				BA049C311FB1CB4D00E63BFA /* TempViewController.swift in Sources */,
 				BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */,
 				BA049C261FB1B72800E63BFA /* Kerning.swift in Sources */,
 				BA58B7381FB55DA700A62207 /* SettingListViewController.swift in Sources */,
 				BA58B7401FB570C200A62207 /* SettingListData.swift in Sources */,
-				BAF169D71FCFD8340000D4B9 /* String+Regex.swift in Sources */,
 				BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */,
 				BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */,
-				BA2DEA191FCD238E007A0953 /* SchoolListViewController.swift in Sources */,
 				BA049C221FB1B6C900E63BFA /* WhiteBtn.swift in Sources */,
 				BA0FF18B1FB9964700111E30 /* SupervisorViewController.swift in Sources */,
 				BA049C2D1FB1C8D100E63BFA /* LoginStepOneViewController.swift in Sources */,
-				BA2DEA1F1FCD4A63007A0953 /* AccountStepData.swift in Sources */,
 				BA7812761FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift in Sources */,
 				BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */,
 				BA58B7361FB5502100A62207 /* AccountStepFourViewController.swift in Sources */,
 				BA049C241FB1B6DA00E63BFA /* YellowBtn.swift in Sources */,
 				BA049C2A1FB1B8C600E63BFA /* LoginViewController.swift in Sources */,
-				BA2DEA1B1FCD2BAF007A0953 /* MyAccountViewController.swift in Sources */,
-				BAF169D41FCFD7920000D4B9 /* Alret.swift in Sources */,
-				BAEB87C81FCEE22500A170B4 /* RightInStoryboardSegue.swift in Sources */,
 				BA049C2F1FB1C91000E63BFA /* KeyboardAccessaryView.swift in Sources */,
-				BA2DEA1D1FCD2C78007A0953 /* MyAccountData.swift in Sources */,
 				BA049C101FB1AABE00E63BFA /* AppDelegate.swift in Sources */,
 				BA7B80C61FBAB629008432AE /* SettingListHeader.swift in Sources */,
 				BA049C331FB1CCBA00E63BFA /* AccountStepOneViewController.swift in Sources */,
-				BA2DEA221FCD8D96007A0953 /* AlamofireRepository.swift in Sources */,
 				BA58B7431FB5764200A62207 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,13 +404,12 @@
 		};
 		BA049C1F1FB1AABE00E63BFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26869421B685A5AA7D3D33E8 /* Pods-JesusSchool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = "JesusSchool/Supporting Files/Info.plist";
+				INFOPLIST_FILE = JesusSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.watasikei.choi;
@@ -628,13 +422,12 @@
 		};
 		BA049C201FB1AABE00E63BFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2998FF737D1419D61B22F421 /* Pods-JesusSchool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = "JesusSchool/Supporting Files/Info.plist";
+				INFOPLIST_FILE = JesusSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.watasikei.choi;
