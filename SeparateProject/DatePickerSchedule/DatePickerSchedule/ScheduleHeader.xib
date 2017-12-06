@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleHeader" customModule="DatePickerSchedule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjL-pp-uVO">
+                    <rect key="frame" x="0.0" y="0.0" width="376" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="30" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-oP-4L4">
+                            <rect key="frame" x="10" y="0.0" width="356" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.53834866749999999" green="0.53834866749999999" blue="0.53834866749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Nap-oP-4L4" firstAttribute="top" secondItem="CjL-pp-uVO" secondAttribute="top" id="GmR-oZ-8Ti"/>
+                        <constraint firstAttribute="trailing" secondItem="Nap-oP-4L4" secondAttribute="trailing" constant="10" id="JD0-t2-XQH"/>
+                        <constraint firstItem="Nap-oP-4L4" firstAttribute="leading" secondItem="CjL-pp-uVO" secondAttribute="leading" constant="10" id="WJK-QX-pQr"/>
+                        <constraint firstAttribute="bottom" secondItem="Nap-oP-4L4" secondAttribute="bottom" id="mph-Qy-89A"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CjL-pp-uVO" secondAttribute="trailing" id="EBd-xo-6dT"/>
+                <constraint firstItem="CjL-pp-uVO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GoT-tr-kqS"/>
+                <constraint firstItem="CjL-pp-uVO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IBZ-jE-CVQ"/>
+                <constraint firstAttribute="bottom" secondItem="CjL-pp-uVO" secondAttribute="bottom" id="z6c-EQ-HaJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="Nap-oP-4L4" id="kO9-BR-fou"/>
+            </connections>
+        </view>
+    </objects>
+</document>
