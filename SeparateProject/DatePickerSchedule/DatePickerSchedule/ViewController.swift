@@ -34,20 +34,22 @@ class ViewController: UIViewController {
     yearMonth = year * 100 + month
     
     alamofireRepository.schedules { scheduleDatas in
-      
-      for scheduleData in scheduleDatas {
-        let dateInfo = scheduleData.scheduleDateInfo
-        let yearMonth = dateInfo.year * 100 + dateInfo.month // 201711
-        if self.scheduledicByYearMonth[yearMonth] == nil {
-          self.scheduledicByYearMonth[yearMonth] = [:]
-        }
-        if self.scheduledicByYearMonth[yearMonth]![dateInfo.day] == nil {
-          self.scheduledicByYearMonth[yearMonth]![dateInfo.day] = []
-        }
-        self.scheduledicByYearMonth[yearMonth]![dateInfo.day]!.append(scheduleData)
-      }
-     
+      self.loadScheduleData(scheduleDatas)
       self.ScheduleTableView.reloadData()
+    }
+  }
+  
+  func loadScheduleData(_ scheduleDatas: [ScheduleData]){
+    for scheduleData in scheduleDatas {
+      let dateInfo = scheduleData.scheduleDateInfo
+      let yearMonth = dateInfo.year * 100 + dateInfo.month // 201711
+      if self.scheduledicByYearMonth[yearMonth] == nil {
+        self.scheduledicByYearMonth[yearMonth] = [:]
+      }
+      if self.scheduledicByYearMonth[yearMonth]![dateInfo.day] == nil {
+        self.scheduledicByYearMonth[yearMonth]![dateInfo.day] = []
+      }
+      self.scheduledicByYearMonth[yearMonth]![dateInfo.day]!.append(scheduleData)
     }
   }
 

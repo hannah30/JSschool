@@ -3,7 +3,7 @@ import UIKit
 import SwiftKeychainWrapper
 
 class AccountStepThreeViewController: UIViewController {
-  
+  //  이동되는 ViewController의 id
   let segueSchoolList = "Schoollist"
   
   var accountStepData: AccountStepData!
@@ -23,14 +23,14 @@ class AccountStepThreeViewController: UIViewController {
     keyboardTopView.delegate = self
     phoneNumberInputTextField.inputAccessoryView = keyboardTopView
   }
-  
+  // TODO 캔슬버튼 연결해야함
   @IBAction func didTabCancelBtn(_ sender: Any) {
     phoneNumberInputTextField.resignFirstResponder()
     self.navigationController?.popViewController(animated: true)
   }
   
 }
-
+//textfield에 들어온 값이 app 핸드폰 정책에 맞는지 체크
 extension AccountStepThreeViewController{
   typealias CheckModel = (emptyMsg: String, regex: String?, regexMsg: String?)
   
@@ -81,17 +81,6 @@ extension AccountStepThreeViewController: KeyboardAccessaryViewDelegate {
       }
     }
     
-    
-    
-    /*guard let phoneNumberInputTextField = phoneNumberInputTextField.text else { return }
-    if !phoneNumberInputTextField.isEmpty && phoneNumberInputTextField.characters.count > 9 {
-      performSegue(withIdentifier: "Schoollist", sender: nil)
-    } else {
-      let alret = UIAlertController(title: "핸드폰번호 확인", message: "유효하지 않은 핸드폰 번호입니다. 다시 확인해 주세요.", preferredStyle: .alert)
-      let alretAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
-      alret.addAction(alretAction)
-      self.present(alret, animated: true, completion: nil)
-    }*/
   }
   
   func join(){
@@ -103,11 +92,11 @@ extension AccountStepThreeViewController: KeyboardAccessaryViewDelegate {
         
         switch joinCheckResult {
         case .avaliable:
-          
-          
+          // 회원가입 만료 후 자동로긴 시키기 위해
           self.login()
         case .exist:
-          // TODO
+          // 혹시 모를 오류를 대비, 만에 하나 이 시점에 다른 회원이 먼저 회원가입을 해서 오류가 생기게 될 경우
+          UIAlertController.alert(target: self, msg: "예기치 않은 오류로 회원가입에 실패하셨습니다.")
           break
         case .empty:
           break
@@ -115,7 +104,7 @@ extension AccountStepThreeViewController: KeyboardAccessaryViewDelegate {
         
     })
   }
-  
+  //  회원가입이 끝나자 마자 자동 로그인 시킴
   func login(){
     self.alamofireRepository.login(
       id: self.accountStepData.id,
@@ -133,8 +122,12 @@ extension AccountStepThreeViewController: KeyboardAccessaryViewDelegate {
           if let loginAccountData = try? JSONEncoder().encode(loginAccount) {
             KeychainWrapper.standard.set(loginAccountData, forKey: "LoginAccount")
           }
-          
-          self.performSegue(withIdentifier: self.segueSchoolList, sender: nil)
+          //         회원가입 후 회원가입페이지는 dismiss시키고 교회학교 가입 페이지로 이동
+          let loginCheckStoryboard = UIStoryboard(name: "Login", bundle: nil)
+          let loginViewController = loginCheckStoryboard.instantiateViewController(withIdentifier: "SchoolListNavi")
+          self.present(loginViewController, animated: true, completion: nil)
+          self.dismiss(animated: true, completion: nil)
+        //          self.performSegue(withIdentifier: self.segueSchoolList, sender: nil)
         case .fail:
           UIAlertController.alert(target: self, msg: "로그인에 실패하였습니다") {
             _ in self.navigationController?.dismiss(animated: true, completion: nil)
@@ -144,10 +137,11 @@ extension AccountStepThreeViewController: KeyboardAccessaryViewDelegate {
     })
   }
 }
-
+//    키보드에 있는  gobtn 터치시 서버 db 체크
 extension AccountStepThreeViewController: UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     didTabNextBtn()
     return false
   }
 }
+

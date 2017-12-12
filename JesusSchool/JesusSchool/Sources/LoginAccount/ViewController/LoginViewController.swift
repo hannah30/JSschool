@@ -4,11 +4,27 @@ import SafariServices
 class LoginViewController: UIViewController, UITextViewDelegate, SFSafariViewControllerDelegate {
   
   @IBOutlet weak var policyTextView: UITextView!
+  @IBOutlet weak var cacaoLoginBtn: YellowBtn!
   
   lazy var alamofireRepository = AlamofireRepository.main
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+//    카카오로그인 버튼에 카카오ci 추가
+    let cacaoImg: UIImageView = {
+      let cacaoimg = UIImageView()
+      cacaoimg.image = UIImage(named: "cacaobtn")
+      cacaoimg.contentMode = .scaleAspectFit
+      return cacaoimg
+    }()
+    
+    cacaoImg.translatesAutoresizingMaskIntoConstraints = false
+    cacaoLoginBtn.addSubview(cacaoImg)
+    cacaoImg.widthAnchor.constraint(equalToConstant: 28).isActive = true
+    cacaoImg.heightAnchor.constraint(equalToConstant: 28).isActive = true
+    cacaoImg.leftAnchor.constraint(equalTo: cacaoLoginBtn.leftAnchor, constant: 45).isActive = true
+    cacaoImg.centerYAnchor.constraint(equalTo: cacaoLoginBtn.centerYAnchor).isActive = true
     
     //    이용약관 및 개인정보보호정책 텍스트를 사파리뷰로 띄워줌
     let termsUrl = URL(string: "https://jesuskids.cafe24.com/jesschool/terms.html")!
@@ -27,7 +43,14 @@ class LoginViewController: UIViewController, UITextViewDelegate, SFSafariViewCon
       NSAttributedStringKey.foregroundColor.rawValue: UIColor.white,
       NSAttributedStringKey.underlineStyle.rawValue: NSUnderlineStyle.styleSingle.rawValue,
     ]
-    policyTextView.attributedText = attributedString
+    //    회원약관 및 개인정보보호정책이 확정되고 하기
+    //    policyTextView.attributedText = attributedString
+    
+  }
+  //  bg가 있어서 네비게이션바 hidden시킴
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: false)
   }
   
   //  실제 사파리뷰로 띄울 텍스트를 touch했을때 실행되는 method

@@ -44,7 +44,7 @@ class AccountStepOneViewController: UIViewController {
     idInputTextField.resignFirstResponder()
     navigationController?.dismiss(animated: true, completion: nil)
   }
-  
+  //  data 담아서 넘기기
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == segueAccountStepTwo {
       if let vc = segue.destination as? AccountStepTwoViewController {

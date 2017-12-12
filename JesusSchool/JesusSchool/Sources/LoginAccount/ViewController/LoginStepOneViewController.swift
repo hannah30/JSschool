@@ -13,6 +13,8 @@ class LoginStepOneViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    //    로그인 첫화면이 hidden 되어있어서 풀어줌
+    navigationController?.setNavigationBarHidden(false, animated: false)
     
     idInputTextField.becomeFirstResponder()
     keyboardTopView.delegate = self
@@ -21,10 +23,10 @@ class LoginStepOneViewController: UIViewController, UITextFieldDelegate {
     idInputTextField.addTarget(self, action: #selector(didTabExit(_:)), for: .editingDidEndOnExit)
     passwordInputTextField.addTarget(self, action: #selector(didTabExit(_:)), for: .editingDidEndOnExit)
     
-    /* in case of closure 
-        keyboardTopView.nextClosure = {
-          self.performSegue(withIdentifier: "kakunin", sender: nil)
-        }
+    /* in case of closure
+     keyboardTopView.nextClosure = {
+     self.performSegue(withIdentifier: "kakunin", sender: nil)
+     }
      */
     idInputTextField.inputAccessoryView = keyboardTopView
     passwordInputTextField.inputAccessoryView = keyboardTopView
@@ -42,15 +44,16 @@ class LoginStepOneViewController: UIViewController, UITextFieldDelegate {
   //  로그인 취소 버튼
   @IBAction func didTabCancelBtn(_ sender: Any) {
     idInputTextField.resignFirstResponder()
-    navigationController?.dismiss(animated: true, completion: nil)
+    navigationController?.popViewController(animated: true)
   }
   
-//키보드에 있는 nextbtn, gobtn을 클릭해도 입력된 값이 app id, password정책에 맞는지 체크
+  //키보드에 있는 nextbtn, gobtn을 클릭해도 입력된 값이 app id, password정책에 맞는지 체크
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     if idInputTextField.isFirstResponder, checkField(idInputTextField) {
       passwordInputTextField.becomeFirstResponder()
     } else if passwordInputTextField.isFirstResponder, checkField(passwordInputTextField) {
-      performSegue(withIdentifier: "kakunin", sender: nil)
+      //    키보드에 있는  gobtn 터치시 서버 db 체크
+      didTabNextBtn()
     }
     return false
   }
@@ -69,7 +72,7 @@ extension LoginStepOneViewController: KeyboardAccessaryViewDelegate {
     alamofireRepository.login(
       id: id,
       password: password) {
-      loginCheckResult in
+        loginCheckResult in
         switch loginCheckResult {
         case .succ:
           
@@ -78,14 +81,15 @@ extension LoginStepOneViewController: KeyboardAccessaryViewDelegate {
           if let loginAccountData = try? JSONEncoder().encode(loginAccount) {
             KeychainWrapper.standard.set(loginAccountData, forKey: "LoginAccount")
           }
+          let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+          let mainGoViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainPage") as! MainPageControllViewController
+          self.present(mainGoViewController, animated: true, completion: nil)
           
-          self.performSegue(withIdentifier: "kakunin", sender: nil)
         case .fail:
           UIAlertController.alert(target: self, msg: "아이디 또는 비밀번호가 잘못되었습니다")
         }
     }
   }
-  
 }
 
 //textfield에 들어온 값이 app id, password정책에 맞는지 체크하는 함수
@@ -126,6 +130,7 @@ extension LoginStepOneViewController{
   
 }
 
+//auto login에 필요한 값을 키체인에 저장해두기 위한 모델링
 struct LoginAccount: Codable {
   var id: String
   var password: String

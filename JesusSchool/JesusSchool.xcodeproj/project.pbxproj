@@ -18,10 +18,18 @@
 		BA049C2F1FB1C91000E63BFA /* KeyboardAccessaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C2E1FB1C91000E63BFA /* KeyboardAccessaryView.swift */; };
 		BA049C311FB1CB4D00E63BFA /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C301FB1CB4D00E63BFA /* TempViewController.swift */; };
 		BA049C331FB1CCBA00E63BFA /* AccountStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA049C321FB1CCBA00E63BFA /* AccountStepOneViewController.swift */; };
+		BA0A799A1FD971FE00311B29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA0A79991FD971FD00311B29 /* GoogleService-Info.plist */; };
 		BA0FF18B1FB9964700111E30 /* SupervisorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FF18A1FB9964700111E30 /* SupervisorViewController.swift */; };
 		BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */; };
 		BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */; };
 		BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */; };
+		BA28428E1FDA6108009D6B00 /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28428D1FDA6108009D6B00 /* ScheduleData.swift */; };
+		BA2842941FDA6493009D6B00 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2842921FDA6493009D6B00 /* ScheduleHeader.swift */; };
+		BA2842951FDA6493009D6B00 /* ScheduleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA2842931FDA6493009D6B00 /* ScheduleHeader.xib */; };
+		BA2842981FDA64A4009D6B00 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2842961FDA64A4009D6B00 /* ScheduleTableViewCell.swift */; };
+		BA2842991FDA64A4009D6B00 /* WriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2842971FDA64A4009D6B00 /* WriteCollectionViewCell.swift */; };
+		BA28429B1FDA64AB009D6B00 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28429A1FDA64AB009D6B00 /* WriteViewController.swift */; };
+		BA28429F1FDA7FB9009D6B00 /* CustomPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28429E1FDA7FB9009D6B00 /* CustomPlaceholderTextField.swift */; };
 		BA2DEA191FCD238E007A0953 /* SchoolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */; };
 		BA2DEA1B1FCD2BAF007A0953 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA1A1FCD2BAF007A0953 /* MyAccountViewController.swift */; };
 		BA2DEA1D1FCD2C78007A0953 /* MyAccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DEA1C1FCD2C78007A0953 /* MyAccountData.swift */; };
@@ -33,9 +41,21 @@
 		BA58B73D1FB56B3D00A62207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA58B73C1FB56B3C00A62207 /* Assets.xcassets */; };
 		BA58B7401FB570C200A62207 /* SettingListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B73F1FB570C200A62207 /* SettingListData.swift */; };
 		BA58B7431FB5764200A62207 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B7421FB5764200A62207 /* ListTableViewCell.swift */; };
+		BA67D48B1FD7B5E700209DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA67D48A1FD7B5E700209DAF /* Main.storyboard */; };
+		BA67D48F1FD7BA9B00209DAF /* MainPageControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D48E1FD7BA9B00209DAF /* MainPageControllViewController.swift */; };
+		BA67D4901FD7BE9E00209DAF /* PagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA67D4911FD7BE9E00209DAF /* PagingKit.framework */; };
+		BA67D4931FD7C03400209DAF /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D4921FD7C03400209DAF /* NewsViewController.swift */; };
+		BA67D4951FD7C06100209DAF /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D4941FD7C06100209DAF /* AttendanceViewController.swift */; };
+		BA67D4971FD7C07200209DAF /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D4961FD7C07200209DAF /* ScheduleViewController.swift */; };
+		BA67D4991FD7C09C00209DAF /* ThisIsSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D4981FD7C09C00209DAF /* ThisIsSettingViewController.swift */; };
+		BA67D49B1FD7C33F00209DAF /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67D49A1FD7C33F00209DAF /* MainMenuCell.swift */; };
+		BA67D49D1FD7C35700209DAF /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA67D49C1FD7C35700209DAF /* MainMenuCell.xib */; };
+		BA67D49F1FD7C9DD00209DAF /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA67D49E1FD7C9DD00209DAF /* FocusView.xib */; };
 		BA7812761FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7812751FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift */; };
 		BA7B80C61FBAB629008432AE /* SettingListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B80C51FBAB629008432AE /* SettingListHeader.swift */; };
 		BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAFA4351FB9818600007805 /* FaqViewController.swift */; };
+		BAC66EA61FDE58660025A947 /* MakeSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC66EA51FDE58660025A947 /* MakeSchoolViewController.swift */; };
+		BAC66EA81FDEA0E20025A947 /* JoinSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC66EA71FDEA0E20025A947 /* JoinSchoolViewController.swift */; };
 		BAEB87C51FCEAAC000A170B4 /* MyAccountList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB87C41FCEAAC000A170B4 /* MyAccountList.storyboard */; };
 		BAEB87C81FCEE22500A170B4 /* RightInStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB87C71FCEE22500A170B4 /* RightInStoryboardSegue.swift */; };
 		BAF169D41FCFD7920000D4B9 /* Alret.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF169D31FCFD7920000D4B9 /* Alret.swift */; };
@@ -61,10 +81,19 @@
 		BA049C2E1FB1C91000E63BFA /* KeyboardAccessaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAccessaryView.swift; sourceTree = "<group>"; };
 		BA049C301FB1CB4D00E63BFA /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		BA049C321FB1CCBA00E63BFA /* AccountStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepOneViewController.swift; sourceTree = "<group>"; };
+		BA0A79981FD96D9100311B29 /* JesusSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JesusSchool.entitlements; sourceTree = "<group>"; };
+		BA0A79991FD971FD00311B29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA0FF18A1FB9964700111E30 /* SupervisorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupervisorViewController.swift; sourceTree = "<group>"; };
 		BA0FF18C1FB9988200111E30 /* InviteFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsViewController.swift; sourceTree = "<group>"; };
 		BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSteptwoViewController.swift; sourceTree = "<group>"; };
 		BA24AFA71FB1D19000716810 /* AccountStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStepThreeViewController.swift; sourceTree = "<group>"; };
+		BA28428D1FDA6108009D6B00 /* ScheduleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		BA2842921FDA6493009D6B00 /* ScheduleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleHeader.swift; path = ../../../../../../SeparateProject/DatePickerSchedule/DatePickerSchedule/ScheduleHeader.swift; sourceTree = "<group>"; };
+		BA2842931FDA6493009D6B00 /* ScheduleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleHeader.xib; path = ../../../../../../SeparateProject/DatePickerSchedule/DatePickerSchedule/ScheduleHeader.xib; sourceTree = "<group>"; };
+		BA2842961FDA64A4009D6B00 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ../../../../../../SeparateProject/DatePickerSchedule/DatePickerSchedule/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		BA2842971FDA64A4009D6B00 /* WriteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteCollectionViewCell.swift; path = ../../../../../../SeparateProject/DatePickerSchedule/DatePickerSchedule/WriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA28429A1FDA64AB009D6B00 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		BA28429E1FDA7FB9009D6B00 /* CustomPlaceholderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlaceholderTextField.swift; sourceTree = "<group>"; };
 		BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListViewController.swift; sourceTree = "<group>"; };
 		BA2DEA1A1FCD2BAF007A0953 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		BA2DEA1C1FCD2C78007A0953 /* MyAccountData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountData.swift; sourceTree = "<group>"; };
@@ -76,9 +105,21 @@
 		BA58B73C1FB56B3C00A62207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA58B73F1FB570C200A62207 /* SettingListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListData.swift; sourceTree = "<group>"; };
 		BA58B7421FB5764200A62207 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		BA67D48A1FD7B5E700209DAF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BA67D48E1FD7BA9B00209DAF /* MainPageControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageControllViewController.swift; sourceTree = "<group>"; };
+		BA67D4911FD7BE9E00209DAF /* PagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA67D4921FD7C03400209DAF /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		BA67D4941FD7C06100209DAF /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		BA67D4961FD7C07200209DAF /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		BA67D4981FD7C09C00209DAF /* ThisIsSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisIsSettingViewController.swift; sourceTree = "<group>"; };
+		BA67D49A1FD7C33F00209DAF /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
+		BA67D49C1FD7C35700209DAF /* MainMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
+		BA67D49E1FD7C9DD00209DAF /* FocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
 		BA7812751FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayJesusSchoolViewController.swift; sourceTree = "<group>"; };
 		BA7B80C51FBAB629008432AE /* SettingListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListHeader.swift; sourceTree = "<group>"; };
 		BAAFA4351FB9818600007805 /* FaqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
+		BAC66EA51FDE58660025A947 /* MakeSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSchoolViewController.swift; sourceTree = "<group>"; };
+		BAC66EA71FDEA0E20025A947 /* JoinSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSchoolViewController.swift; sourceTree = "<group>"; };
 		BAEB87C41FCEAAC000A170B4 /* MyAccountList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAccountList.storyboard; sourceTree = "<group>"; };
 		BAEB87C71FCEE22500A170B4 /* RightInStoryboardSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightInStoryboardSegue.swift; sourceTree = "<group>"; };
 		BAF169D31FCFD7920000D4B9 /* Alret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alret.swift; sourceTree = "<group>"; };
@@ -91,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA67D4901FD7BE9E00209DAF /* PagingKit.framework in Frameworks */,
 				D640375F268B87FFCA40E012 /* Pods_JesusSchool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +152,7 @@
 		92A9B38A5C6ECA172E2CB634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA67D4911FD7BE9E00209DAF /* PagingKit.framework */,
 				720CF07892AA9A1EB2D5F1E5 /* Pods_JesusSchool.framework */,
 			);
 			name = Frameworks;
@@ -136,6 +179,8 @@
 		BA049C0E1FB1AABD00E63BFA /* JesusSchool */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A79981FD96D9100311B29 /* JesusSchool.entitlements */,
+				BA0A79991FD971FD00311B29 /* GoogleService-Info.plist */,
 				BAF169D51FCFD7980000D4B9 /* Utils */,
 				BA2DEA201FCD8D86007A0953 /* Service */,
 				BAF169CE1FCFAEA80000D4B9 /* Sources */,
@@ -172,8 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				BA049C291FB1B8C600E63BFA /* LoginViewController.swift */,
-				BAF169D81FCFE20F0000D4B9 /* SplashViewController.swift */,
 				BA2DEA181FCD238E007A0953 /* SchoolListViewController.swift */,
+				BAC66EA71FDEA0E20025A947 /* JoinSchoolViewController.swift */,
+				BAC66EA51FDE58660025A947 /* MakeSchoolViewController.swift */,
 				BA049C2C1FB1C8D100E63BFA /* LoginStepOneViewController.swift */,
 				BA049C301FB1CB4D00E63BFA /* TempViewController.swift */,
 				BA24AFA51FB1CEAC00716810 /* AccountSteptwoViewController.swift */,
@@ -191,6 +237,51 @@
 				BA7B80C51FBAB629008432AE /* SettingListHeader.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BA28428F1FDA610F009D6B00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA28428D1FDA6108009D6B00 /* ScheduleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA2842901FDA6134009D6B00 /* ViewCotroller */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D4921FD7C03400209DAF /* NewsViewController.swift */,
+				BA67D4941FD7C06100209DAF /* AttendanceViewController.swift */,
+				BA2842A01FDA81EA009D6B00 /* ScheduleViewController */,
+				BA67D4981FD7C09C00209DAF /* ThisIsSettingViewController.swift */,
+				BAF169D81FCFE20F0000D4B9 /* SplashViewController.swift */,
+				BA67D48E1FD7BA9B00209DAF /* MainPageControllViewController.swift */,
+			);
+			path = ViewCotroller;
+			sourceTree = "<group>";
+		};
+		BA2842911FDA614D009D6B00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D49A1FD7C33F00209DAF /* MainMenuCell.swift */,
+				BA2842921FDA6493009D6B00 /* ScheduleHeader.swift */,
+				BA2842961FDA64A4009D6B00 /* ScheduleTableViewCell.swift */,
+				BA2842971FDA64A4009D6B00 /* WriteCollectionViewCell.swift */,
+				BA2842931FDA6493009D6B00 /* ScheduleHeader.xib */,
+				BA67D49C1FD7C35700209DAF /* MainMenuCell.xib */,
+				BA67D49E1FD7C9DD00209DAF /* FocusView.xib */,
+				BA28429E1FDA7FB9009D6B00 /* CustomPlaceholderTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA2842A01FDA81EA009D6B00 /* ScheduleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D4961FD7C07200209DAF /* ScheduleViewController.swift */,
+				BA28429A1FDA64AB009D6B00 /* WriteViewController.swift */,
+			);
+			path = ScheduleViewController;
 			sourceTree = "<group>";
 		};
 		BA2DEA201FCD8D86007A0953 /* Service */ = {
@@ -230,6 +321,25 @@
 				BA58B73F1FB570C200A62207 /* SettingListData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BA67D48C1FD7B60C00209DAF /* MainContents */ = {
+			isa = PBXGroup;
+			children = (
+				BA67D48A1FD7B5E700209DAF /* Main.storyboard */,
+				BA67D48D1FD7B63500209DAF /* ViewController */,
+			);
+			path = MainContents;
+			sourceTree = "<group>";
+		};
+		BA67D48D1FD7B63500209DAF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA28428F1FDA610F009D6B00 /* Model */,
+				BA2842901FDA6134009D6B00 /* ViewCotroller */,
+				BA2842911FDA614D009D6B00 /* View */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		BAEB87C01FCEA88700A170B4 /* MyAccountList */ = {
@@ -278,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				BA049C0F1FB1AABE00E63BFA /* AppDelegate.swift */,
+				BA67D48C1FD7B60C00209DAF /* MainContents */,
 				BA049C281FB1B78200E63BFA /* LoginAccount */,
 				BA58B73B1FB55F8900A62207 /* Setting */,
 				BAEB87C01FCEA88700A170B4 /* MyAccountList */,
@@ -347,6 +458,11 @@
 					BA049C0B1FB1AABD00E63BFA = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -374,10 +490,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEB87C51FCEAAC000A170B4 /* MyAccountList.storyboard in Resources */,
+				BA67D49F1FD7C9DD00209DAF /* FocusView.xib in Resources */,
+				BA0A799A1FD971FE00311B29 /* GoogleService-Info.plist in Resources */,
+				BA2842951FDA6493009D6B00 /* ScheduleHeader.xib in Resources */,
 				BA049C1A1FB1AABE00E63BFA /* LaunchScreen.storyboard in Resources */,
 				BA049C151FB1AABE00E63BFA /* Login.storyboard in Resources */,
+				BA67D48B1FD7B5E700209DAF /* Main.storyboard in Resources */,
 				BA58B73D1FB56B3D00A62207 /* Assets.xcassets in Resources */,
 				BA58B73A1FB55F7300A62207 /* Setting.storyboard in Resources */,
+				BA67D49D1FD7C35700209DAF /* MainMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,14 +513,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JesusSchool/Pods-JesusSchool-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PagingKit/PagingKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,6 +577,8 @@
 			files = (
 				BAF169D91FCFE20F0000D4B9 /* SplashViewController.swift in Sources */,
 				BA049C311FB1CB4D00E63BFA /* TempViewController.swift in Sources */,
+				BA2842991FDA64A4009D6B00 /* WriteCollectionViewCell.swift in Sources */,
+				BA2842981FDA64A4009D6B00 /* ScheduleTableViewCell.swift in Sources */,
 				BA24AFA61FB1CEAC00716810 /* AccountSteptwoViewController.swift in Sources */,
 				BA049C261FB1B72800E63BFA /* Kerning.swift in Sources */,
 				BA58B7381FB55DA700A62207 /* SettingListViewController.swift in Sources */,
@@ -455,12 +586,17 @@
 				BAF169D71FCFD8340000D4B9 /* String+Regex.swift in Sources */,
 				BAAFA4361FB9818600007805 /* FaqViewController.swift in Sources */,
 				BA24AFA81FB1D19000716810 /* AccountStepThreeViewController.swift in Sources */,
+				BA67D4971FD7C07200209DAF /* ScheduleViewController.swift in Sources */,
 				BA2DEA191FCD238E007A0953 /* SchoolListViewController.swift in Sources */,
 				BA049C221FB1B6C900E63BFA /* WhiteBtn.swift in Sources */,
 				BA0FF18B1FB9964700111E30 /* SupervisorViewController.swift in Sources */,
 				BA049C2D1FB1C8D100E63BFA /* LoginStepOneViewController.swift in Sources */,
 				BA2DEA1F1FCD4A63007A0953 /* AccountStepData.swift in Sources */,
 				BA7812761FB96FFA00CDE8F6 /* SayJesusSchoolViewController.swift in Sources */,
+				BAC66EA61FDE58660025A947 /* MakeSchoolViewController.swift in Sources */,
+				BA2842941FDA6493009D6B00 /* ScheduleHeader.swift in Sources */,
+				BA28428E1FDA6108009D6B00 /* ScheduleData.swift in Sources */,
+				BA67D4951FD7C06100209DAF /* AttendanceViewController.swift in Sources */,
 				BA0FF18D1FB9988200111E30 /* InviteFriendsViewController.swift in Sources */,
 				BA58B7361FB5502100A62207 /* AccountStepFourViewController.swift in Sources */,
 				BA049C241FB1B6DA00E63BFA /* YellowBtn.swift in Sources */,
@@ -469,12 +605,19 @@
 				BAF169D41FCFD7920000D4B9 /* Alret.swift in Sources */,
 				BAEB87C81FCEE22500A170B4 /* RightInStoryboardSegue.swift in Sources */,
 				BA049C2F1FB1C91000E63BFA /* KeyboardAccessaryView.swift in Sources */,
+				BA67D4991FD7C09C00209DAF /* ThisIsSettingViewController.swift in Sources */,
 				BA2DEA1D1FCD2C78007A0953 /* MyAccountData.swift in Sources */,
 				BA049C101FB1AABE00E63BFA /* AppDelegate.swift in Sources */,
 				BA7B80C61FBAB629008432AE /* SettingListHeader.swift in Sources */,
+				BA67D49B1FD7C33F00209DAF /* MainMenuCell.swift in Sources */,
 				BA049C331FB1CCBA00E63BFA /* AccountStepOneViewController.swift in Sources */,
 				BA2DEA221FCD8D96007A0953 /* AlamofireRepository.swift in Sources */,
+				BAC66EA81FDEA0E20025A947 /* JoinSchoolViewController.swift in Sources */,
 				BA58B7431FB5764200A62207 /* ListTableViewCell.swift in Sources */,
+				BA67D48F1FD7BA9B00209DAF /* MainPageControllViewController.swift in Sources */,
+				BA28429B1FDA64AB009D6B00 /* WriteViewController.swift in Sources */,
+				BA67D4931FD7C03400209DAF /* NewsViewController.swift in Sources */,
+				BA28429F1FDA7FB9009D6B00 /* CustomPlaceholderTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,13 +755,14 @@
 			baseConfigurationReference = 26869421B685A5AA7D3D33E8 /* Pods-JesusSchool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JesusSchool/JesusSchool.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2M85THSX7L;
+				DEVELOPMENT_TEAM = PP5VV2LAS4;
 				INFOPLIST_FILE = "JesusSchool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.watasikei.choi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusjoyful.school;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -631,13 +775,14 @@
 			baseConfigurationReference = 2998FF737D1419D61B22F421 /* Pods-JesusSchool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JesusSchool/JesusSchool.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2M85THSX7L;
+				DEVELOPMENT_TEAM = PP5VV2LAS4;
 				INFOPLIST_FILE = "JesusSchool/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.watasikei.choi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusjoyful.school;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

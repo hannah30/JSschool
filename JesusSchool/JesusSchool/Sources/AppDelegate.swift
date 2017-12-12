@@ -1,12 +1,8 @@
-//
-//  AppDelegate.swift
-//  Jesus 1School
-//
-//  Created by okkoung on 2017. 11. 7..
-//  Copyright © 2017년 okkoung. All rights reserved.
-//
 
 import UIKit
+import UserNotifications
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +11,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    FirebaseApp.configure()
+    
+    registRemoteNotification()
+    
     return true
+  }
+  
+  
+  func registRemoteNotification(){
+    DispatchQueue.main.async {
+      UIApplication.shared.registerForRemoteNotifications()
+    }
+    
+    Messaging.messaging().delegate = self
+    
+    if #available(iOS 10.0, *) {
+      UNUserNotificationCenter.current().delegate = self
+      
+      UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+        grant, error in
+        print("grant : ",grant," / error : ",error)
+        
+        if !grant {
+          // Alert창 ~~때문에 꼭 허용하셔야 합니다.
+          // TODO
+        }
+      }
+    } else {
+      let setting = UIUserNotificationSettings.init(types: [.alert, .sound, .badge], categories: nil)
+      UIApplication.shared.registerUserNotificationSettings(setting)
+    }
+    
+    //UIApplication.shared.applicationIconBadgeNumber = 0
+    
+    
   }
 
   func applicationWillResignActive(_ application: UIApplication) {
@@ -40,7 +70,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
-
-
+  
+  // 기기 토큰 발급 성공 local
+  /*func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    let tokenParts = deviceToken.map { data -> String in
+      return String(format: "%02.2hhx", data)
+    }
+    let token = tokenParts.joined()
+    print("Device Token is : ", token)
+    //UserDefaults.standard.set(token, forKey: "PushToken")
+  }*/
+  
+  // 기기 토큰 발급 실패
+  func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    print("Remote Notification Register Error ", error)
+  }
+  
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+  func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+    completionHandler([.alert, .badge, .sound])
+  }
+  func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    completionHandler()
+  }
+}
+
+//기존 token을 받아 Fairbase token으로 받기
+extension AppDelegate: MessagingDelegate {
+  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+    print("FCM TOKEN : ", fcmToken)
+    //Messaging.messaging().fcmToken
+    
+  }
+}

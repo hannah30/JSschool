@@ -15,12 +15,12 @@
 		BA4A981C1FD0F8C100BBA04C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4A981A1FD0F8C100BBA04C /* LaunchScreen.storyboard */; };
 		BA4A98241FD11EF400BBA04C /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A98231FD11EF400BBA04C /* WriteViewController.swift */; };
 		BA4A98261FD12C6400BBA04C /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A98251FD12C6400BBA04C /* ScheduleData.swift */; };
-		BA4A98281FD12C6E00BBA04C /* AlamofireRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A98271FD12C6D00BBA04C /* AlamofireRepository.swift */; };
+		BA4A98281FD12C6E00BBA04C /* AlamofireRepositorySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A98271FD12C6D00BBA04C /* AlamofireRepositorySchedule.swift */; };
 		BA4A982A1FD137CB00BBA04C /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A98291FD137CB00BBA04C /* ScheduleTableViewCell.swift */; };
 		BA4A98301FD14ADA00BBA04C /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A982F1FD14ADA00BBA04C /* ScheduleHeader.swift */; };
 		BA67566F1FD5125A000B33D7 /* ScheduleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA67566E1FD5125A000B33D7 /* ScheduleHeader.xib */; };
 		BA973A501FD654CE00F72A58 /* WriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA973A4F1FD654CE00F72A58 /* WriteCollectionViewCell.swift */; };
-		BA973A521FD6812800F72A58 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA973A511FD6812800F72A58 /* ViewController2.swift */; };
+		BA973A521FD6812800F72A58 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA973A511FD6812800F72A58 /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,12 +35,12 @@
 		BA4A981D1FD0F8C100BBA04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4A98231FD11EF400BBA04C /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		BA4A98251FD12C6400BBA04C /* ScheduleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
-		BA4A98271FD12C6D00BBA04C /* AlamofireRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRepository.swift; sourceTree = "<group>"; };
+		BA4A98271FD12C6D00BBA04C /* AlamofireRepositorySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireRepositorySchedule.swift; path = ../../../JesusSchool/JesusSchool/Service/AlamofireRepositorySchedule.swift; sourceTree = "<group>"; };
 		BA4A98291FD137CB00BBA04C /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		BA4A982F1FD14ADA00BBA04C /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		BA67566E1FD5125A000B33D7 /* ScheduleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHeader.xib; sourceTree = "<group>"; };
 		BA973A4F1FD654CE00F72A58 /* WriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCollectionViewCell.swift; sourceTree = "<group>"; };
-		BA973A511FD6812800F72A58 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BA973A511FD6812800F72A58 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		F341863D9AA17263DD67EF9F /* Pods_DatePickerSchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatePickerSchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,11 +94,11 @@
 		BA4A98101FD0F8C100BBA04C /* DatePickerSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				BA4A98271FD12C6D00BBA04C /* AlamofireRepository.swift */,
+				BA4A98271FD12C6D00BBA04C /* AlamofireRepositorySchedule.swift */,
 				BA4A98251FD12C6400BBA04C /* ScheduleData.swift */,
 				BA4A98111FD0F8C100BBA04C /* AppDelegate.swift */,
 				BA4A98131FD0F8C100BBA04C /* ViewController.swift */,
-				BA973A511FD6812800F72A58 /* ViewController2.swift */,
+				BA973A511FD6812800F72A58 /* ScheduleViewController.swift */,
 				BA4A982F1FD14ADA00BBA04C /* ScheduleHeader.swift */,
 				BA67566E1FD5125A000B33D7 /* ScheduleHeader.xib */,
 				BA4A98151FD0F8C100BBA04C /* Main.storyboard */,
@@ -244,9 +244,9 @@
 			files = (
 				BA4A98261FD12C6400BBA04C /* ScheduleData.swift in Sources */,
 				BA4A98301FD14ADA00BBA04C /* ScheduleHeader.swift in Sources */,
-				BA973A521FD6812800F72A58 /* ViewController2.swift in Sources */,
+				BA973A521FD6812800F72A58 /* ScheduleViewController.swift in Sources */,
 				BA973A501FD654CE00F72A58 /* WriteCollectionViewCell.swift in Sources */,
-				BA4A98281FD12C6E00BBA04C /* AlamofireRepository.swift in Sources */,
+				BA4A98281FD12C6E00BBA04C /* AlamofireRepositorySchedule.swift in Sources */,
 				BA4A982A1FD137CB00BBA04C /* ScheduleTableViewCell.swift in Sources */,
 				BA4A98241FD11EF400BBA04C /* WriteViewController.swift in Sources */,
 				BA4A98141FD0F8C100BBA04C /* ViewController.swift in Sources */,
